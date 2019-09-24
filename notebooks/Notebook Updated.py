@@ -15,10 +15,11 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 
 #%% [markdown]
 # Import files
-
 #%%
-# !pwd
-tracks_df = pd.read_csv('../external/fma_metadata/raw_tracks.csv')
+!pwd
+#%%
+!pwd
+tracks_df = pd.read_csv('external/fma_metadata/raw_tracks.csv')
 # data needs to be shuffeled it was orderd sequentially 
 tracks_df = tracks_df.sample(frac=1)#.reset_index()
 tracks_df = tracks_df[pd.notnull(tracks_df['track_genres'])]
