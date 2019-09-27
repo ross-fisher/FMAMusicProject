@@ -7,8 +7,7 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, predictions, interact, process, test, test2
-from pages import test3, test4, test5
+from pages import index, model, interact
 
 
 """
@@ -31,14 +30,8 @@ navbar = dbc.NavbarSimple(
     brand='Music',
     brand_href='/', 
     children=[
-        dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Insights', href='/interact', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Test', href='/test', className='nav-link')),
-        dbc.NavItem(dcc.Link('Test 2', href='/test2', className='nav-link')),
-        dbc.NavItem(dcc.Link('Test 3', href='/test3', className='nav-link')),
-        dbc.NavItem(dcc.Link('Test 4', href='/test4', className='nav-link')),
-        dbc.NavItem(dcc.Link('Test 5', href='/test5', className='nav-link')),
+        dbc.NavItem(dcc.Link('Interact', href='/interact', className='nav-link')),
+        dbc.NavItem(dcc.Link('Model', href='/model', className='nav-link'))
     ],
     sticky='top',
     color='primary', 
@@ -84,22 +77,10 @@ def something():
 def display_page(pathname):
     if pathname == '/':
         return index.layout
-    elif pathname == '/predictions':
-        return predictions.layout
     elif pathname == '/interact':
-        return insights.layout
-    elif pathname == '/process':
-        return process.layout
-    elif pathname == '/test':
-        return test.layout
-    elif pathname == '/test2':
-        return test2.layout
-    elif pathname == '/test3':
-        return test3.layout
-    elif pathname == '/test4':
-        return test4.layout
-    elif pathname == '/test5':
-        return test5.layout
+        return interact.layout
+    elif pathname == '/model':
+        return model.layout
     else:
         return dcc.Markdown('## Page not found')
 
