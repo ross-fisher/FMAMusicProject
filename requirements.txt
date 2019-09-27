@@ -13,3 +13,4 @@ graphviz==0.12
 gunicorn==19.9.0
 PDPbox==0.2.0
 lxml
+requests
