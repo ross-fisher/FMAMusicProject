@@ -68,9 +68,6 @@ app.layout = html.Div([
     footer
 ])
 
-def something():
-    return 'test'
-
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 
