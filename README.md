@@ -14,4 +14,5 @@ cd assets
 curl -O https://os.unil.cloud.switch.ch/fma/fma_metadata.zip
 unzip fma_metadata -d fma_metadata
 ```
-<img src="https://github.com/ross-fisher/FMAMusicProject/blob/master/assets/tree.png?raw=true" style="height: 350px;"></img>
+<img src="https://github.com/ross-fisher/FMAMusicProject/blob/master/assets/tree.png?raw=true" style="min-height: 350px;"></img>
+<img src="https://github.com/ross-fisher/FMAMusicProject/blob/master/assets/example_predict_data.png?raw=true" style="min-height: 300px"></img>
