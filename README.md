@@ -15,8 +15,9 @@ curl -O https://os.unil.cloud.switch.ch/fma/fma_metadata.zip
 unzip fma_metadata -d fma_metadata
 ```
 
-Random Forest Decision Tree Visualization 
+### Random Forest Decision Tree Visualization 
 <img src="https://github.com/ross-fisher/FMAMusicProject/blob/master/assets/tree.png?raw=true" style="min-height: 350px;"></img>
 
-Predicted Data
+
+### Predicted Data
 <img src="https://github.com/ross-fisher/FMAMusicProject/blob/master/assets/example_predict_data.png?raw=true" style="min-height: 300px"></img>
