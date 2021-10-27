@@ -7,7 +7,7 @@ dash-daq==0.1.7
 dash-html-components==1.0.1
 dash-renderer==1.0.1
 dash-table==4.2.0
-dask==2.4.0
+dask==2021.10.0
 decorator==4.4.0
 graphviz==0.12
 gunicorn==19.9.0
